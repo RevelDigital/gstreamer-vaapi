@@ -1,0 +1,10 @@
+option('with_encoders', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('with_drm', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('with_x11', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('with_glx', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('with_wayland', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+option('with_egl', type : 'combo', choices : ['yes', 'no', 'auto'], value : 'auto')
+
+# Common feature options
+option('examples', type : 'feature', value : 'auto', yield : true)
+option('gtk_doc', type : 'feature', value : 'auto', yield : true, description : 'Build API documentation with gtk-doc')
